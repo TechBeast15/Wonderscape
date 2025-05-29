@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Strong CSP (No inline allowed) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net;
+    style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net;
+    font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com https://cdn.jsdelivr.net;
+    img-src 'self' data:;
+    connect-src 'self';
+    media-src 'self';
+    object-src 'none';
+    form-action 'self';
+    base-uri 'self';
+    upgrade-insecure-requests;
+  "
+    />
+
+    <!-- Other headers -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="geolocation=(), microphone=(), camera=()"
+    />
+
+    <title>👩‍🦰 Wonderscape</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Boostarap ICON Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Exrtenal CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="main-section">
+      <div class="container">
+        <div class="heading-div">
+          <h1>Wonderscape</h1>
+          <div class="">
+            <a
+              href="https://youtube.com/@codewithprojects-anurag?si=UQOGdvc5EwCkP-hW"
+              target="_blank"
+              ><img
+                src="./Assets/logo/youtube.png"
+                class="youtube"
+                alt="Youtube Icon"
+            /></a>
+            <a
+              href="https://www.instagram.com/codewithprojects/"
+              target="_blank"
+              ><img src="./Assets/logo/instagram.png" alt="Instagram Icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="slideshow-container">
+          <div class="mySlides fades">
+            <div class="numbertext">1 / 7</div>
+            <img src="./Assets/sevenWonders/TajMahal.jpeg" />
+            <div class="text">Taj Mahal</div>
+          </div>
+
+          <div class="mySlides fades">
+            <div class="numbertext">2 / 7</div>
+            <img src="/Assets/sevenWonders/Petra.jpeg" />
+            <div class="text">Petra</div>
+          </div>
+
+          <div class="mySlides fades">
+            <div class="numbertext">3 / 7</div>
+            <img src="./Assets/sevenWonders/MachuPicchu.jpeg" />
+            <div class="text">Machu Picchu</div>
+          </div>
+
+          <div class="mySlides fades">
+            <div class="numbertext">4 / 7</div>
+            <img src="./Assets/sevenWonders/GreatWallofChina.jpeg" />
+            <div class="text">Great Wall of China</div>
+          </div>
+
+          <div class="mySlides fades">
+            <div class="numbertext">5 / 7</div>
+            <img src="./Assets/sevenWonders/Colosseum.jpeg" />
+            <div class="text">Colosseum</div>
+          </div>
+
+          <div class="mySlides fades">
+            <div class="numbertext">6 / 7</div>
+            <img src="./Assets/sevenWonders/ChristtheRedeemer.jpeg" />
+            <div class="text">Christ the Redeemer</div>
+          </div>
+
+          <div class="mySlides fades">
+            <div class="numbertext">7 / 7</div>
+            <img src="./Assets/sevenWonders/ChichenItza.jpeg" />
+            <div class="text">Chichén Itzá</div>
+          </div>
+
+          <a class="prev">❮</a>
+          <a class="next">❯</a>
+        </div>
+
+        <div class="dot-div">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="">
+          <h2 class="seven-header">New Seven Wonders of the World</h2>
+          <p>
+            In 2000 a Swiss foundation launched a campaign to determine the New
+            Seven Wonders of the World. Given that the original Seven Wonders
+            list was compiled in the 2nd century BCE—and that only one entrant
+            is still standing (the Pyramids of Giza)—it seemed time for an
+            update. And people around the world apparently agreed, as more than
+            100 million votes were cast on the Internet or by text messaging.
+            The final results, which were announced in 2007, were met with
+            cheers as well as some jeers—a number of prominent contenders, such
+            as Athens’s Acropolis, failed to make the cut. Do you agree with the
+            new list?
+          </p>
+
+          <p>
+            2000 में एक स्विस फाउंडेशन ने दुनिया के नए सात अजूबों को निर्धारित
+            करने के लिए एक अभियान शुरू किया। यह देखते हुए कि मूल सात अजूबों की
+            सूची दूसरी शताब्दी ईसा पूर्व में संकलित की गई थी - और उसमें से केवल
+            एक ही अभी भी खड़ा है (गीज़ा के पिरामिड) - इसे अपडेट करने का समय आ
+            गया था। और दुनिया भर के लोग जाहिर तौर पर सहमत थे, क्योंकि इंटरनेट या
+            टेक्स्ट मैसेजिंग के ज़रिए 100 मिलियन से ज़्यादा वोट डाले गए थे। 2007
+            में घोषित किए गए अंतिम नतीजों पर खुशी के साथ-साथ कुछ लोगों ने उपहास
+            भी किया - एथेंस के एक्रोपोलिस जैसे कई प्रमुख दावेदार इस सूची में जगह
+            बनाने में विफल रहे। क्या आप नई सूची से सहमत हैं?
+          </p>
+        </div>
+
+        <!-- Taj Mahal -->
+        <div class="box">
+          <h2>Taj Mahal - 🇮🇳 India (Agra, Uttar Pradesh)</h2>
+          <div class="sevenBlog">
+            <img
+              src="./Assets/sevenRealImage/Taj-Mahal-Agra-India.webp"
+              alt=""
+            />
+            <div class="">
+              <p>
+                This mausoleum complex in Agra, India, is regarded as one of the
+                world’s most iconic monuments and is perhaps the finest example
+                of Mughal architecture. It was built by Emperor Shah Jahān
+                (reigned 1628–58) to honor his wife Mumtāz Maḥal (“Chosen One of
+                the Palace”), who died in 1631 giving birth to their 14th child.
+                It took about 22 years and 20,000 workers to construct the
+                complex, which includes an immense garden with a reflecting
+                pool. The mausoleum is made of white marble that features
+                semiprecious stones in geometric and floral patterns. Its
+                majestic central dome is surrounded by four smaller domes.
+                According to some reports, Shah Jahān wished to have his own
+                mausoleum made out of black marble. However, he was deposed by
+                one of his sons before any work began.
+              </p>
+
+              <p>
+                भारत के आगरा में स्थित यह मकबरा परिसर दुनिया के सबसे प्रतिष्ठित
+                स्मारकों में से एक माना जाता है और शायद यह मुगल वास्तुकला का
+                सबसे बेहतरीन उदाहरण है। इसे बादशाह शाहजहाँ (शासनकाल 1628-58) ने
+                अपनी पत्नी मुमताज़ महल (“महल की चुनी हुई महिला”) के सम्मान में
+                बनवाया था, जिनकी मृत्यु 1631 में उनके 14वें बच्चे को जन्म देते
+                समय हुई थी। इस परिसर को बनाने में लगभग 22 साल और 20,000 मज़दूर
+                लगे, जिसमें एक विशाल उद्यान और एक प्रतिबिंबित पूल शामिल है।
+                मकबरा सफ़ेद संगमरमर से बना है जिसमें ज्यामितीय और पुष्प पैटर्न
+                में अर्ध-कीमती पत्थर लगे हैं। इसका राजसी केंद्रीय गुंबद चार छोटे
+                गुंबदों से घिरा हुआ है। कुछ रिपोर्टों के अनुसार, शाहजहाँ की
+                इच्छा थी कि उनका मकबरा काले संगमरमर से बना हो। हालाँकि, कोई भी
+                काम शुरू होने से पहले ही उनके एक बेटे ने उन्हें पदच्युत कर दिया
+                था।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Petra -->
+        <div class="box">
+          <h2>Petra - 🇯🇴 Jordan (Ma'an Governorate)</h2>
+          <div class="sevenBlog">
+            <img
+              src="./Assets/sevenRealImage/Khaznah-Petra-Jordan.webp"
+              alt=""
+            />
+            <div class="">
+              <p>
+                The ancient city of Petra, Jordan, is located in a remote
+                valley, nestled among sandstone mountains and cliffs. It was
+                purported to be one of the places where Moses struck a rock and
+                water gushed forth. Later the Nabataeans, an Arab tribe, made it
+                their capital, and during this time it flourished, becoming an
+                important trade center, especially for spices. Noted carvers,
+                the Nabataeans chiseled dwellings, temples, and tombs into the
+                sandstone, which changed color with the shifting sun. In
+                addition, they constructed a water system that allowed for lush
+                gardens and farming. At its height, Petra reportedly had a
+                population of 30,000. The city began to decline, however, as
+                trade routes shifted. A major earthquake in 363 CE caused more
+                difficulty, and after another tremor hit in 551, Petra was
+                gradually abandoned. Although rediscovered in 1912, it was
+                largely ignored by archaeologists until the late 20th century,
+                and many questions remain about the city.
+              </p>
+
+              <p>
+                जॉर्डन का प्राचीन शहर पेट्रा, बलुआ पत्थर के पहाड़ों और चट्टानों
+                के बीच बसा एक सुदूर घाटी में स्थित है। ऐसा माना जाता है कि यह उन
+                जगहों में से एक है जहाँ मूसा ने एक चट्टान पर प्रहार किया था और
+                पानी बह निकला था। बाद में अरब जनजाति नाबातियन ने इसे अपनी
+                राजधानी बनाया और इस दौरान यह फला-फूला और खास तौर पर मसालों के
+                लिए एक महत्वपूर्ण व्यापार केंद्र बन गया। प्रसिद्ध नक्काशीकार,
+                नाबातियन ने बलुआ पत्थर में घर, मंदिर और कब्रें बनाईं, जो बदलते
+                सूरज के साथ रंग बदलते थे। इसके अलावा, उन्होंने एक जल प्रणाली का
+                निर्माण किया जिससे हरे-भरे बगीचे और खेती की अनुमति मिली। अपने
+                चरम पर, पेट्रा की आबादी कथित तौर पर 30,000 थी। हालाँकि, व्यापार
+                मार्ग बदलने के साथ ही शहर का पतन शुरू हो गया। 363 ई. में एक बड़े
+                भूकंप ने और अधिक कठिनाई पैदा की और 551 में एक और भूकंप के बाद,
+                पेट्रा को धीरे-धीरे छोड़ दिया गया। हालाँकि 1912 में इसे फिर से
+                खोजा गया, लेकिन 20वीं सदी के अंत तक पुरातत्वविदों ने इसे काफी हद
+                तक अनदेखा किया और शहर के बारे में कई सवाल बने हुए हैं।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machu Picchu -->
+        <div class="box">
+          <h2>Machu Picchu - 🇵🇪 Peru (Cusco Region, Andes Mountains)</h2>
+          <div class="sevenBlog">
+            <img src="./Assets/sevenRealImage/Machu-Picchu.webp" alt="" />
+            <div class="">
+              <p>
+                This Incan site near Cuzco, Peru, was “discovered” in 1911 by
+                Hiram Bingham, who believed it was Vilcabamba, a secret Incan
+                stronghold used during the 16th-century rebellion against
+                Spanish rule. Although that claim was later disproved, the
+                purpose of Machu Picchu has confounded scholars. Bingham
+                believed it was home to the “Virgins of the Sun,” women who
+                lived in convents under a vow of chastity. Others think that it
+                was likely a pilgrimage site, while some believe it was a royal
+                retreat. (One thing it apparently should not be is the site of a
+                beer commercial. In 2000 a crane being used for such an ad fell
+                and cracked a monument.) What is known is that Machu Picchu is
+                one of the few major pre-Columbian ruins found nearly intact.
+                Despite its relative isolation high in the Andes Mountains, it
+                features agricultural terraces, plazas, residential areas, and
+                temples.
+              </p>
+
+              <p>
+                पेरू के कुज्को के पास स्थित इस इंका स्थल की खोज 1911 में हीराम
+                बिंगहैम ने की थी, जो मानते थे कि यह विलकाबाम्बा था, जो 16वीं
+                शताब्दी में स्पेनिश शासन के खिलाफ विद्रोह के दौरान इस्तेमाल किया
+                गया एक गुप्त इंका गढ़ था। हालाँकि बाद में उस दावे को गलत साबित
+                कर दिया गया था, लेकिन माचू पिच्चू के उद्देश्य ने विद्वानों को
+                भ्रमित कर दिया है। बिंगहैम का मानना ​​था कि यह "सूर्य की कुंवारी
+                कन्याओं" का घर था, जो महिलाएं पवित्रता की शपथ लेकर कॉन्वेंट में
+                रहती थीं। दूसरों को लगता है कि यह संभवतः एक तीर्थ स्थल था, जबकि
+                कुछ का मानना ​​है कि यह एक शाही आश्रय स्थल था। (एक बात जो इसे
+                स्पष्ट रूप से नहीं होनी चाहिए वह है बीयर के विज्ञापन का स्थल।
+                2000 में इस तरह के विज्ञापन के लिए इस्तेमाल की जा रही एक क्रेन
+                गिर गई और एक स्मारक टूट गया।) जो ज्ञात है वह यह है कि माचू
+                पिच्चू उन कुछ प्रमुख प्री-कोलंबियाई खंडहरों में से एक है जो लगभग
+                बरकरार पाए गए हैं। एंडीज पर्वतमाला में अपने सापेक्ष अलगाव के
+                बावजूद, इसमें कृषि छतों, चौकों, आवासीय क्षेत्रों और मंदिरों की
+                विशेषता है।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Great Wall of China -->
+        <div class="box">
+          <h2>Great Wall of China - 🇨🇳 China (Northern China)</h2>
+          <div class="sevenBlog">
+            <img
+              src="./Assets/sevenRealImage/Great-Wall-of-China-Beijing.webp"
+              alt=""
+            />
+            <div class="">
+              <p>
+                Great might be an understatement. One of the world’s largest
+                building-construction projects, the Great Wall of China is
+                widely thought to be about 5,500 miles (8,850 km) long; a
+                disputed Chinese study, however, claims the length is 13,170
+                miles (21,200 km). Work began in the 7th century BCE and
+                continued for two millennia. Although called a “wall,” the
+                structure actually features two parallel walls for lengthy
+                stretches. In addition, watchtowers and barracks dot the
+                bulwark. One not-so-great thing about the wall, however, was its
+                effectiveness. Although it was built to prevent invasions and
+                raids, the wall largely failed to provide actual security.
+                Instead, scholars have noted that it served more as “political
+                propaganda.”
+              </p>
+
+              <p>
+                महान कहना शायद कम होगा। दुनिया की सबसे बड़ी इमारत-निर्माण
+                परियोजनाओं में से एक, चीन की महान दीवार को व्यापक रूप से लगभग
+                5,500 मील (8,850 किमी) लंबा माना जाता है; हालांकि, एक विवादित
+                चीनी अध्ययन का दावा है कि इसकी लंबाई 13,170 मील (21,200 किमी)
+                है। 7वीं शताब्दी ईसा पूर्व में काम शुरू हुआ और दो सहस्राब्दियों
+                तक जारी रहा। हालाँकि इसे "दीवार" कहा जाता है, लेकिन संरचना में
+                वास्तव में लंबे हिस्सों में दो समानांतर दीवारें हैं। इसके अलावा,
+                वॉचटावर और बैरक बुलवार्क को बिंदु देते हैं। हालाँकि, दीवार के
+                बारे में एक बहुत अच्छी बात इसकी प्रभावशीलता नहीं थी। हालाँकि इसे
+                आक्रमणों और छापों को रोकने के लिए बनाया गया था, लेकिन दीवार काफी
+                हद तक वास्तविक सुरक्षा प्रदान करने में विफल रही।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colosseum -->
+        <div class="box">
+          <h2>Roman Colosseum - 🇮🇹 Italy (Rome)</h2>
+          <div class="sevenBlog">
+            <img
+              src="./Assets/sevenRealImage/Colosseum-Rome-Italy.webp"
+              alt=""
+            />
+            <div class="">
+              <p>
+                The Colosseum in Rome was built in the first century by order of
+                the Emperor Vespasian. A feat of engineering, the amphitheater
+                measures 620 by 513 feet (189 by 156 meters) and features a
+                complex system of vaults. It was capable of holding 50,000
+                spectators, who watched a variety of events. Perhaps most
+                notable were gladiator fights, though men battling animals was
+                also common. In addition, water was sometimes pumped into the
+                Colosseum for mock naval engagements. However, the belief that
+                Christians were martyred there—namely, by being thrown to
+                lions—is debated. According to some estimates, about 500,000
+                people died in the Colosseum. Additionally, so many animals were
+                captured and then killed there that certain species reportedly
+                became extinct.
+              </p>
+
+              <p>
+                रोम में कोलोसियम का निर्माण पहली शताब्दी में सम्राट वेस्पासियन
+                के आदेश पर किया गया था। इंजीनियरिंग की एक अद्भुत उपलब्धि,
+                एम्फीथिएटर का माप 620 गुणा 513 फीट (189 गुणा 156 मीटर) है और
+                इसमें वाल्टों की एक जटिल प्रणाली है। यह 50,000 दर्शकों को
+                समायोजित करने में सक्षम था, जिन्होंने विभिन्न प्रकार की घटनाओं
+                को देखा। शायद सबसे उल्लेखनीय ग्लैडीएटर की लड़ाई थी, हालांकि
+                जानवरों से लड़ने वाले पुरुष भी आम थे। इसके अलावा, कभी-कभी नकली
+                नौसैनिक मुठभेड़ों के लिए कोलोसियम में पानी डाला जाता था।
+                हालाँकि, यह विश्वास कि ईसाइयों को वहाँ शहीद किया गया था -
+                अर्थात्, शेरों के सामने फेंक दिया गया था - विवादित है। कुछ
+                अनुमानों के अनुसार, कोलोसियम में लगभग 500,000 लोग मारे गए। इसके
+                अतिरिक्त, इतने सारे जानवरों को पकड़ा गया और फिर वहाँ मार दिया
+                गया कि कुछ प्रजातियाँ कथित तौर पर विलुप्त हो गईं।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Christ the Redeemer -->
+        <div class="box">
+          <h2>Christ the Redeemer - 🇧🇷 Brazil (Rio de Janeiro)</h2>
+          <div class="sevenBlog">
+            <img
+              src="./Assets/sevenRealImage/statue-Christ-the-Redeemer-Rio-de-Janeiro.webp"
+              alt=""
+            />
+            <div class="">
+              <p>
+                Christ the Redeemer, a colossal statue of Jesus, stands atop
+                Mount Corcovado in Rio de Janeiro. Its origins date to just
+                after World War I, when some Brazilians feared a “tide of
+                godlessness.” They proposed a statue, which was ultimately
+                designed by Heitor da Silva Costa, Carlos Oswald, and Paul
+                Landowski. Construction began in 1926 and was completed five
+                years later. The resulting monument stands 98 feet (30 meters)
+                tall—not including its base, which is about 26 feet (8 meters)
+                high—and its outstretched arms span 92 feet (28 meters). It is
+                the largest Art Deco sculpture in the world. Christ the Redeemer
+                is made of reinforced concrete and is covered in approximately
+                six million tiles. Somewhat disconcertingly, the statue has
+                often been struck by lightning, and in 2014 the tip of Jesus’s
+                right thumb was damaged during a storm.
+              </p>
+
+              <p>
+                क्राइस्ट द रिडीमर, यीशु की एक विशाल प्रतिमा, रियो डी जेनेरियो
+                में माउंट कोरकोवाडो के ऊपर स्थित है। इसकी उत्पत्ति प्रथम विश्व
+                युद्ध के ठीक बाद की है, जब कुछ ब्राज़ीलियाई लोगों को
+                "ईश्वरविहीनता की लहर" का डर था। उन्होंने एक प्रतिमा का प्रस्ताव
+                रखा, जिसे अंततः हेइटर दा सिल्वा कोस्टा, कार्लोस ओसवाल्ड और पॉल
+                लैंडोव्स्की ने डिज़ाइन किया। निर्माण 1926 में शुरू हुआ और पाँच
+                साल बाद पूरा हुआ। परिणामी स्मारक 98 फ़ीट (30 मीटर) ऊँचा है -
+                इसके आधार को छोड़कर, जो लगभग 26 फ़ीट (8 मीटर) ऊँचा है - और इसकी
+                फैली हुई भुजाएँ 92 फ़ीट (28 मीटर) तक फैली हुई हैं। यह दुनिया की
+                सबसे बड़ी आर्ट डेको मूर्तिकला है। क्राइस्ट द रिडीमर प्रबलित
+                कंक्रीट से बना है और लगभग छह मिलियन टाइलों से ढका हुआ है। कुछ हद
+                तक निराशाजनक रूप से, मूर्ति पर अक्सर बिजली गिरती रही है, और 2014
+                में एक तूफान के दौरान यीशु के दाहिने अंगूठे की नोक क्षतिग्रस्त
+                हो गई थी।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chichén Itzá-->
+        <div class="box">
+          <h2>Chichén Itzá - 🇲🇽 Mexico (Yucatán)</h2>
+          <div class="sevenBlog">
+            <img
+              src="./Assets/sevenRealImage/El-Castillo-pyramid-plaza-Toltec-state-Yucatan.webp"
+              alt=""
+            />
+            <div class="">
+              <p>
+                Chichén Itzá is a Mayan city on the Yucatán Peninsula in Mexico,
+                which flourished in the 9th and 10th centuries CE. Under the
+                Mayan tribe Itzá—who were strongly influenced by the Toltecs—a
+                number of important monuments and temples were built. Among the
+                most notable is the stepped pyramid El Castillo (“The Castle”),
+                which rises 79 feet (24 meters) above the Main Plaza. A
+                testament to the Mayans’ astronomical abilities, the structure
+                features a total of 365 steps, the number of days in the solar
+                year. During the spring and autumnal equinoxes, the setting sun
+                casts shadows on the pyramid that give the appearance of a
+                serpent slithering down the north stairway; at the base is a
+                stone snake head. Life there was not all work and science,
+                however. Chichén Itzá is home to the largest tlachtli (a type of
+                sporting field) in the Americas. On that field the residents
+                played a ritual ball game popular throughout pre-Columbian
+                Mesoamerica.
+              </p>
+
+              <p>
+                चिचेन इट्ज़ा मेक्सिको के युकाटन प्रायद्वीप पर स्थित एक माया शहर
+                है, जो 9वीं और 10वीं शताब्दी ई. में फला-फूला। माया जनजाति इट्ज़ा
+                के तहत - जो टॉलटेक से काफ़ी प्रभावित थे - कई महत्वपूर्ण स्मारक
+                और मंदिर बनाए गए थे। सबसे उल्लेखनीय में से एक है सीढ़ीदार
+                पिरामिड एल कैस्टिलो ("द कैसल"), जो मुख्य प्लाजा से 79 फ़ीट (24
+                मीटर) ऊपर है। मायाओं की खगोलीय क्षमताओं का एक प्रमाण, संरचना में
+                कुल 365 सीढ़ियाँ हैं, जो सौर वर्ष में दिनों की संख्या है। वसंत
+                और शरद ऋतु के विषुव के दौरान, डूबता सूरज पिरामिड पर छाया डालता
+                है जो उत्तरी सीढ़ी से नीचे रेंगते हुए एक साँप का आभास देता है;
+                आधार पर एक पत्थर का साँप का सिर है। हालाँकि, वहाँ का जीवन केवल
+                काम और विज्ञान तक सीमित नहीं था। चिचेन इट्ज़ा अमेरिका में सबसे
+                बड़े ट्लाचटली (एक प्रकार का खेल का मैदान) का घर है। उस मैदान पर
+                निवासी एक अनुष्ठानिक गेंद खेल खेलते थे जो पूर्व-कोलंबियाई
+                मेसोअमेरिका में लोकप्रिय था।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 xMaxCoder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
